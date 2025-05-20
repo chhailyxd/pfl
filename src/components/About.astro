@@ -1,0 +1,154 @@
+---
+---
+
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title fade-in">About Me</h2>
+    <div class="about-content">
+      <div class="about-image fade-in">
+        <img src="/blog-placeholder-about.jpg" alt="About John Doe" />
+      </div>
+      <div class="about-text">
+        <p class="fade-in delay-100">
+          I'm a passionate Software Engineer with over 5 years of experience in
+          building web applications and services. I specialize in frontend
+          development with React, Vue, and Svelte, but I'm also proficient in
+          backend technologies like Node.js and Python.
+        </p>
+        <p class="fade-in delay-200">
+          My journey in tech began when I was 15, building simple websites for
+          friends and family. This early fascination with code evolved into a
+          full-time career where I've had the privilege to work with amazing
+          teams on challenging projects.
+        </p>
+        <p class="fade-in delay-300">
+          When I'm not coding, you can find me hiking in the mountains,
+          experimenting with new cooking recipes, or contributing to open-source
+          projects. I believe in continuous learning and sharing knowledge with
+          the community.
+        </p>
+        <div class="about-stats fade-in delay-300">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    background-color: var(--background-color);
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+  }
+
+  .about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-image {
+    flex: 1;
+    position: relative;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-image::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .about-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--light-text-color);
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .about-image::after {
+      display: none;
+    }
+
+    .about-stats {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .stat {
+      flex: 1;
+      min-width: 120px;
+    }
+  }
+</style>
